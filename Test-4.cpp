@@ -20,18 +20,18 @@ struct Stats {                                                                  
 
 std::string typeChoose(MONSTER_TYPE b) {                                                //Выбираю и записываю в строковую переменную тип монстра в зависимости 
                                                                                         //от выбраного типа в переменной класса MONSTER_TYPE
-    std::string type;
 
     switch (static_cast<int>(b)) {
 
-    case 0: type = "ogre";
-    case 1: type = "goblin";
-    case 2: type = "sceleton";
-    case 3: type = "orc";
-    case 4: type = "troll";
+    case 0: return "ogre";
+    case 1: return "goblin";
+    case 2: return "sceleton";
+    case 3: return "orc";
+    case 4: return "troll";
 
+    default: return "unknown";
     }
-    return type;
+
 }
  
 
